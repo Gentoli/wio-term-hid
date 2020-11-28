@@ -1,0 +1,28 @@
+[package]
+name = "rs-wio-term"
+version = "0.1.0"
+authors = ["Gentoli <gentoli@live.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "~0.6"
+cortex-m-rt = "~0.6.12"
+cortex-m-rtic = { git = "https://github.com/rtic-rs/cortex-m-rtic.git" }
+
+embedded-hal = "~0.2.3"
+usb-device = "~0.2"
+usbd-serial = "~0.1"
+panic-halt = "~0.2"
+embedded-graphics = "~0.6"
+heapless = "~0.5"
+usbd-hid = { path = "./deps/usbd-hid" }
+arrayvec = { version = "~0.5.2", default-features = false }
+
+paste = "1.0"
+
+
+[dependencies.wio-terminal]
+path = "./deps/atsamd/boards/wio_terminal"
+features = ["usb"]

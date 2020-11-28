@@ -1,0 +1,6 @@
+[submodule "deps/usbd-hid"]
+	path = deps/usbd-hid
+	url = https://github.com/Gentoli/usbd-hid.git
+[submodule "deps/atsamd"]
+	path = deps/atsamd
+	url = https://github.com/Gentoli/atsamd.git
