@@ -23,6 +23,6 @@ arrayvec = { version = "~0.5.2", default-features = false }
 paste = "1.0"
 
 
-[dependencies.wio-terminal]
+[dependencies.wio_terminal]
 path = "./deps/atsamd/boards/wio_terminal"
 features = ["usb"]
